@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Water Quality Data</title>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="water_data.js"></script>
+</head>
+<body>
+
+<h1 style="font-family: Arial; text-align: center;">
+    Water Quality Testing Data Sample
+</h1>
+<br><br>
+<div id="test2_div"></div>
+<div id="dashboard_div">
+    <p> This is where dashboard starts</p>
+
+    <table cellpadding="10%", align="center">
+        <form id="chartform">
+            <select id="ChartChoice" name="ChartChoice" onchange="update_chart()">
+                <option value="Histogram">Histogram</option>
+                <option value="ColumnChart">ColumnChart</option>
+                <option value="AreaChart">AreaChart</option>
+                <option value="ScatterChart">ScatterChart</option>
+                <option value="PieChart">PieChart</option>
+                <option value="LineChart">Line Chart</option>
+
+            </select>
+        </form>
+        <div id="Chart_selector_div"></div>
+        <div id="Turbidity_cat_filter"></div>
+        <div id="Turbidity_date_filter"> <p> This is our filter</p></div>
+
+
+
+        <tr>
+            <td><div id="Turbidity_div"> <p> This is our chart</p></div></td>
+            <td><div id="Nitrate_div"></div></td>
+            <td><div id="Nitrite_div"></div></td>
+        </tr>
+        <tr>
+            <td><div id="pH_div"> </div></td>
+            <td><div id="totalChlorine_div"></div></td>
+            <td><div id="riskTable_div"></div></td>
+        </tr>
+        <tr>
+            <td><div id="mpnChart_div"></div></td>
+            <td><div id="confIntChart_div"></div></td>
+
+
+        </tr>
+
+    </table>
+    <div align="center" id="dataTable_div"> <p> Datatable  </p> </div>
+    <br><br>
+</div>
+
+<div align="center" id="stats"></div>
+
+
+
+</body>
+</html>
